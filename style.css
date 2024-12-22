@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+#nav-bar li {
+  margin: 0 15px;
+}
+
+#nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#nav-bar a:hover {
+  background-color: #555;
+}
+
+/* Welcome Section */
+#welcome-section {
+  background: url('https://i.postimg.cc/K8FN7t25/uw-visit3.jpg') center/cover no-repeat;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f4f4f9;
+  padding: 50px 20px;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.project-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-tile {
+  text-decoration: none;
+  color: #333;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-tile p {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #333;
+  color: white;
+  padding: 20px 10px;
+}
+
+#contact a {
+  color: #05C3DD;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #nav-bar ul {
+    flex-direction: column;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  #welcome-section p {
+    font-size: 1.2rem;
+  }
+}
