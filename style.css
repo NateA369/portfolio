@@ -56,15 +56,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 #welcome-section h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; /* Black outline */
 }
 
 #welcome-section p {
   font-size: 1.5rem;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Black outline */
 }
 
 /* Projects Section */
